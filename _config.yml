@@ -83,11 +83,11 @@ author:
   name             : "Amina Azaiez"
   avatar           : "profile.png"
   bio              : "PhD Candidate"
-  location         : "CES, Université Paris 1 Panthéon Sorbonne"
-  employer         :
+  location         : "Paris"
+  employer         : "Paris 1 Panthéon Sorbonne"
   pubmed           : 
   googlescholar    : 
-  email            :
+  email            : "amina.azaiez@univ-paris1.fr"
   researchgate     :  # example: "https://www.researchgate.net/profile/yourprofile"
   uri              :
   bitbucket        :
