@@ -11,4 +11,5 @@ dates :
     end: 2022-01-01 
 
 location: "Paris, France"
+
 ---
