@@ -4,7 +4,7 @@ collection: teaching
 type: "Undergraduate tutorials"
 permalink: /teaching/2022_Probablity
 venue: "University Paris 1 Panthéon Sorbonne"
-date: 2022-01 2022-05 
+date: 2022-01-01
 location: "Paris, France"
 ---
 
