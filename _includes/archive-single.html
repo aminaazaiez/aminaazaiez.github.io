@@ -41,9 +41,9 @@
         
 
         {% if post.collection == 'teaching' %}
-          <p> {{ post.type }}, <i>{{ post.venues }}</i></p>
+          <p> {{ post.type }}, <i>{{ post.venue }}</i></p>
           <ul> 
-            {% for date in post.date %}
+            {% for date in post.dates %}
               <li>{{ date.begin | date: "%Y-%m" }} - {{ date.end | date: "%Y-%m" }}</li>
             {% endfor %}
           </ul>  
