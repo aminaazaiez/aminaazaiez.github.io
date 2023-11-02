@@ -52,6 +52,11 @@ layout: default
         </header>
       {% endunless %}
 
+      {% if page.authors %}
+        <section class="page__authors">
+          <h2>Authors: {{ post.authors | join: ', ' }}</h2>
+          {{ page.authors | markdownify }}
+        </section>
       
       {% if page.abstract %}
         <section class="page__abstract">
