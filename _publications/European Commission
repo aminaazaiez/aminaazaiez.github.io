@@ -1,0 +1,19 @@
+---
+title: "Lobbying in the European Commission, A Hypergraph Analysis"
+collection: publications
+permalink: /publication/political-participation
+authors:
+  - Amina Azaiez
+  - Antoine Mandel
+future_work: true
+abstract: 
+The complex and multi-level structure of European Union institutions has led to substantial public and academic debate about their legitimacy  and democratic quality. One of the focal point of this debate is the European Commission (EC) that is often seen as lacking electoral-based legitimacy.
+In view of  addressing these concerns, the Treaty on European Union has aimed to introduce a from of ``consultative legitimacy" by specifying in its article 11 that   "*The European Commission shall carry out broad consultations with parties concerned in order to ensure that the Union's actions are coherent and transparent.*"  The Treaty further specifies  that these engagements with interest groups must align with specific performance criteria: accountability, transparency, efficiency, openness, and inclusiveness.  In this paper, we use a large open dataset on  meetings between European commissioners and stakeholders to investigate quantitatively whether the actual implementation of the consultation process is in line  with the principles of openness and inclusiveness put forward. Openness entails granting all parties, whether organizations or citizens, the opportunity to express their views.  Inclusiveness encourages the consideration of a diverse range of perspectives, ensuring a balance and fairness in their representation.    \\
+
+The EC consults with stakeholders through two main channels: through written/online consultations and through face-to-face meetings. Although the  former is the most common form of consultation, the latter has been identified as a channel through which substantial influence can be exerted. Our paper studies this high influence channel through an analysis of the network of interactions between EC commission staff (commissioners, their cabinet members, and directorate generals) and stakeholders/third-parties. Notably, we investigate whether the distribution of network centrality across agents, which is standardly considered as a measure of influence in social organisations, is consistent with the principles of openness and inclusiveness. \\
+To investigate this, we compile information on meetings held by EC representatives and build a hypergraph, where the vertices represent EC members and organizations and hyperedges involve the entities that attend meetings.  
+We begin with examining the overarching structure of the network and assess the centrality of different groups, categorized by country, organization type, and sectors.
+Subsequently, our analysis narrows down to companies and groups, where we compare their size to their centrality within the network, with the aim of identifying if there is a representation bias in favor of certain subgroups.  
+For our research, we draw upon data from the Transparency Register of the EU and the Orbis dataset. Meeting data is accessible through the EC members' website. \\
+
+---
