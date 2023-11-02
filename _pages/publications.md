@@ -11,7 +11,7 @@ author_profile: true
 
 {% include base_path %}
 
-<h2>Current Work</h2>
+<h2>Work in Progress</h2>
 {% for post in site.publications %}
   {% if post.future_work %}
     {% include archive-single.html %}
