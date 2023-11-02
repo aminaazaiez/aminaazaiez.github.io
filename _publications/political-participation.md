@@ -1,5 +1,5 @@
 ---
-title: "Political Participation and Voluntary Associations: A Hypergraph case Study"
+title: "Political Participation and Voluntary Associations: A Hypergraph Case Study"
 collection: publications
 permalink: /publication/political-participation
 authors:
