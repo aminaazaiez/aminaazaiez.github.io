@@ -1,7 +1,7 @@
 ---
 title: "Lobbying in the European Commission, A Hypergraph Analysis"
 collection: publications
-permalink: /publication/European-Commission
+permalink: /publication/european-commission
 authors:
   - Amina Azaiez
   - Antoine Mandel
