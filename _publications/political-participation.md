@@ -6,6 +6,5 @@ authors:
   - Amina Azaiez
   - Robin Salot
 future_work: true
-abstract: >
-This is an abstract
+abstract: This is an abstract
 ---
