@@ -42,13 +42,7 @@ layout: default
           <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> {{ site.data.ui-text[site.locale].date_label | default: "Published:" }}</strong> <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | default: "1900-01-01" | date: "%B %d, %Y" }}</time></p>
         {% endif %}
 
-        {% if page.abstract %}
-        <section class="page__abstract">
-          <h2>Abstract</h2>
-          {{ page.abstract | markdownify }}
-        </section>
-      {% endif %}
-             
+            
         {% if page.citation and page.paperurl %}
           <p>Recommended citation: {{ page.citation }} <a href="{{ page.paperurl }}"><u>{{ page.paperurl }}</u></a></p>
         {% elsif page.citation %}
@@ -57,6 +51,13 @@ layout: default
     
         </header>
       {% endunless %}
+
+      {% if page.abstract %}
+        <section class="page__abstract">
+          <h2>Abstract</h2>
+          {{ page.abstract | markdownify }}
+        </section>
+      {% endif %}
 
       <section class="page__content" itemprop="text">
         {{ content }}
