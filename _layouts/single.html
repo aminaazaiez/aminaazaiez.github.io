@@ -52,6 +52,16 @@ layout: default
         </header>
       {% endunless %}
 
+      
+      {% if page.abstract %}
+        <section class="page__abstract">
+          <h2>Abstract</h2>
+          {{ page.abstract | markdownify }}
+        </section>
+      {% endif %}
+
+
+
 
 
       <section class="page__content" itemprop="text">
