@@ -10,7 +10,7 @@ locale                   : "en-US"
 title                    : "Amina Azaiez"
 title_separator          : "-"
 name                     : &name "Your Name"
-description              : &description "PhD Candidate"
+description              : &description "Postdoc"
 url                      : https://aminaazaiez.github.io/ # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "aminaazaiez/aminaazaiez.github.io"
@@ -81,13 +81,13 @@ analytics:
 # Site Author
 author:
   name             : "Amina Azaiez"
-  avatar           : "profile.png"
-  bio              : "PhD Candidate"
-  location         : "Paris"
-  employer         : "Paris 1 Panthéon Sorbonne"
+  avatar           : "profile.jpg"
+  bio              : "Postdoctoral researcher"
+  location         : "CAMS, Paris"
+  employer         :
   pubmed           : 
   googlescholar    : 
-  email            : "amina.azaiez@univ-paris1.fr"
+  email            : "amina.azaiez@ehess.fr"
   researchgate     :  # example: "https://www.researchgate.net/profile/yourprofile"
   uri              :
   bitbucket        :

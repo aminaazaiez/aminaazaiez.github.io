@@ -1,0 +1,13 @@
+{% comment %}
+  Authors line (site author's name in bold) and "journal, year" line for a publication.
+  Usage: {% include publication-details.html pub=post %}
+{% endcomment %}
+{% assign pub = include.pub %}
+{% if pub.authors %}
+<div class="pub-item__authors">
+  {% for a in pub.authors %}{% if a == site.author.name %}<strong>{{ a }}</strong>{% else %}{{ a }}{% endif %}{% unless forloop.last %}, {% endunless %}{% endfor %}
+</div>
+{% endif %}
+{% if pub.venue or pub.status %}
+<div class="pub-item__venue">{{ pub.venue | default: pub.status }}{% if pub.date %}, {{ pub.date | date: "%Y" }}{% endif %}</div>
+{% endif %}

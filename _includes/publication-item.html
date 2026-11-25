@@ -1,0 +1,13 @@
+{% comment %}
+  One entry on the Publications page.
+  Line 1: title (links to the paper's page with the abstract), followed by icons
+  Line 2: authors, site author's name in bold
+  Line 3: journal (venue), or status for work in progress, and year
+{% endcomment %}
+<div class="pub-item">
+  <div class="pub-item__head">
+    <a class="pub-item__title" href="{{ post.url | relative_url }}">{{ post.title }}</a>
+    {% include publication-links.html pub=post %}
+  </div>
+  {% include publication-details.html pub=post %}
+</div>

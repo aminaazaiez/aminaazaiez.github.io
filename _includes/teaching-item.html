@@ -1,0 +1,17 @@
+{% comment %}
+  One entry on the Teaching page (same style as the Publications list).
+  Line 1: title
+  Line 2: type, institution (type omitted for tutorials: the section heading already says it)
+  Line 3: dates — the year for each period with an `end` (tutorials), the full date for one-day events
+{% endcomment %}
+<div class="pub-item">
+  <div class="pub-item__head">
+    <span class="pub-item__title">{{ post.title }}</span>
+  </div>
+  <div class="pub-item__authors">{% unless post.type contains "Tutorial" %}{{ post.type }}{% if post.venue %}, {% endif %}{% endunless %}{{ post.venue }}</div>
+  {% if post.dates %}
+  <div class="pub-item__venue">
+    {% for d in post.dates %}{% if d.end %}{{ d.begin | date: "%Y" }}{% else %}{{ d.begin | date: "%-d %B %Y" }}{% endif %}{% unless forloop.last %}, {% endunless %}{% endfor %}
+  </div>
+  {% endif %}
+</div>

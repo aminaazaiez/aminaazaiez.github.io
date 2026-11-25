@@ -39,3 +39,68 @@
 @import "vendor/font-awesome/brands";
 @import "vendor/magnific-popup/magnific-popup";
 @import "print";
+/* Publications list (_includes/publication-item.html) */
+.pub-item {
+  margin-bottom: 1.6em;
+  line-height: 1.4;
+}
+.pub-item__title,
+.pub-item__title:visited {
+  font-weight: bold;
+  font-size: 1.05em;
+  color: #000;
+  text-decoration: none;
+}
+a.pub-item__title:hover {
+  color: #000;
+  text-decoration: none;
+  opacity: 0.7;
+}
+.pub-item__authors {
+  font-size: 0.85em;
+}
+.pub-item__venue {
+  font-size: 0.85em;
+  font-style: italic;
+}
+/* Link buttons ("DOI", "Code"); change $pub-btn-color to change their colour */
+$pub-btn-color: #1f5fa8;
+.pub-item__links {
+  margin-left: 0.5em;
+  white-space: nowrap;
+  vertical-align: middle;
+}
+.pub-btn,
+.pub-btn:visited {
+  display: inline-block;
+  margin-right: 0.3em;
+  padding: 0.1em 0.55em;
+  border: 1px solid $pub-btn-color;
+  border-radius: 4px;
+  color: $pub-btn-color;
+  font-size: 0.75rem;
+  font-weight: 600;
+  line-height: 1.5;
+  text-decoration: none;
+  vertical-align: middle;
+}
+.pub-btn:hover,
+.pub-btn:focus {
+  background: $pub-btn-color;
+  color: #fff;
+  text-decoration: none;
+}
+.pub-btn i {
+  margin-right: 0.15em;
+}
+
+/* Header of a paper's own page (_layouts/single.html) */
+.pub-page__details {
+  margin-bottom: 1em;
+  font-size: 1.15em;
+}
+
+/* Section headings on the Teaching page */
+.section-title {
+  color: $pub-btn-color;
+}

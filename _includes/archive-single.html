@@ -44,13 +44,18 @@
           <p> {{ post.type }}, <i>{{ post.venue }}</i></p>
           <ul> 
             {% for date in post.dates %}
-              <li>{{ date.begin | date: "%Y-%m" }} - {{ date.end | date: "%Y-%m" }}</li>
+              {% if date.end %}
+                <li>{{ date.begin | date: "%Y-%m" }} - {{ date.end | date: "%Y-%m" }}</li>
+              {% else %}
+                <li>{{ date.begin | date: "%Y-%m-%d" }}</li>
+              {% endif %}
             {% endfor %}
           </ul>  
     
         {% elsif post.collection == 'publications' %}
+          <p> Authors: {{ post.authors | join: ', ' }} </p>
           {% if post.future_work %}
-            <p> Authors: {{ post.authors | join: ', ' }} </p>
+            {% if post.status %}<p><i>{{ post.status }}</i></p>{% endif %}
           {% else %}
             <p>Published in <i>{{ post.venue }}</i>, {{ post.date | default: "1900-01-01" | date: "%Y" }} </p>
           {% endif %}

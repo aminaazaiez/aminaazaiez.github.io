@@ -3,10 +3,23 @@ layout: archive
 title: "Teaching"
 permalink: /teaching/
 author_profile: true
+hide_title: true
 ---
 
-{% include base_path %}
+{% comment %}
+  Entries whose `type` contains "Tutorial" go under Tutorials; everything else under Lectures.
+{% endcomment %}
 
+<h2 class="section-title">Lectures</h2>
 {% for post in site.teaching reversed %}
-  {% include archive-single.html %}
+  {% unless post.type contains "Tutorial" %}
+    {% include teaching-item.html %}
+  {% endunless %}
+{% endfor %}
+
+<h2 class="section-title">Tutorials</h2>
+{% for post in site.teaching reversed %}
+  {% if post.type contains "Tutorial" %}
+    {% include teaching-item.html %}
+  {% endif %}
 {% endfor %}

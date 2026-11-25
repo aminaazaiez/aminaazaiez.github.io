@@ -11,16 +11,14 @@ author_profile: true
 
 {% include base_path %}
 
-<h2>Work in Progress</h2>
-{% for post in site.publications %}
+{% for post in site.publications reversed %}
   {% if post.future_work %}
-    {% include archive-single.html %}
+    {% include publication-item.html %}
   {% endif %}
 {% endfor %}
 
-<h2>Publications</h2>
-{% for post in site.publications %}
+{% for post in site.publications reversed %}
   {% unless post.future_work %}
-    {% include archive-single.html %}
+    {% include publication-item.html %}
   {% endunless %}
 {% endfor %}
